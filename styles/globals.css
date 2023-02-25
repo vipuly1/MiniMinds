@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind+Madurai&family=Inter&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .mini-title {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+  }
+}
+
+@layer base {
+  html {
+    background-color: #F6FAF5;
+    font-family: 'Inter';
+
+  }
+}
+
+@layer component {
+  .description {
+    @apply font-inter max-w-[346px] h-[30px] font-medium text-xs text-[#555555] text-center
+  }
+
+  .login-input {
+    box-sizing: border-box;
+    width: 100%;
+    width: 380px;
+    border-color: rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    height: 48px;
+    color: rgba(0, 0, 0, 0.8);
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    padding: 0 8px !important;
+  }
+}
